@@ -10,6 +10,7 @@ import Updates from "./Updates";
 import Visa from "./Visa";
 import Footer from "./Footer";
 
+
 function Home() {
   return (
     <>

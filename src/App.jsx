@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Signup from "./components/Signup";
 import Signin from "./components/Signin";
+import About from "./components/About/About";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        {/* Home page with Nav */}
         <Route
           path="/"
           element={
@@ -22,9 +24,19 @@ function App() {
           }
         />
 
+        {/* About page with Nav */}
+        <Route
+          path="/about"
+          element={
+            <>
+              <Nav />
+              <About />
+            </>
+          }
+        />
+
         <Route path="/signup" element={<Signup />} />
 
-       
         <Route path="/login" element={<Signin />} />
       </Routes>
     </Router>

@@ -12,7 +12,7 @@ function Cerpac() {
       className="w-full max-w-md mx-auto order-2 md:order-1"
     />
 
-    {/* Text */}
+   
     <div className="order-1 md:order-2 text-center md:text-left mx-auto md:mx-0">
       <h3 className="text-2xl font-bold text-black-800">Cerpac</h3>
       <p className="text-gray-700 mt-4 text-sm leading-relaxed">

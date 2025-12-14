@@ -19,7 +19,7 @@ function Hero() {
       <div
         className="
       relative z-10 text-white 
-      max-w-[300px] mx-auto 
+      max-w-[300px] 
       flex flex-col items-center text-center
       md:max-w-xl md:items-start 
     "
@@ -34,7 +34,7 @@ function Hero() {
           Nigeria <span className="text-green-300">Immigration</span> Service
         </h1>
 
-        {/* Paragraph */}
+   
         <p
           className="
         mt-3 text-base 

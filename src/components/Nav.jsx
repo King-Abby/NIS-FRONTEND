@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import imgNis from "../assets/logo/image 7.png";
 
@@ -15,12 +16,57 @@ function Nav() {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-6 text-gray-700 font-medium">
-          <li>Home</li>
-          <li>About us</li>
-          <li>Services</li>
-          <li>Information center</li>
-          <li>Contact us</li>
+        <ul className="hidden md:flex gap-6 text-gray-700 font-medium hover:cursor-pointer">
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "text-green-500" : "hover:text-green-500"
+              }
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "text-green-500" : "hover:text-green-500"
+              }
+            >
+              About us
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/services"
+              className={({ isActive }) =>
+                isActive ? "text-green-500" : "hover:text-green-500"
+              }
+            >
+              Services
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/information"
+              className={({ isActive }) =>
+                isActive ? "text-green-500" : "hover:text-green-500"
+              }
+            >
+              Information center
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? "text-green-500" : "hover:text-green-500"
+              }
+            >
+              Contact us
+            </NavLink>
+          </li>
         </ul>
 
         {/* Apply */}
@@ -42,7 +88,7 @@ function Nav() {
         </div>
       </nav>
 
-      {/* === FULL SCREEN SIDEBAR === */}
+      
       {open && (
         <div className="fixed inset-0 bg-green-800 text-white z-50 p-10 flex flex-col gap-10">
           {/* CLOSE BUTTON */}
