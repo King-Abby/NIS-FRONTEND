@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Signup from "./components/Signup";
 import Signin from "./components/Signin";
 import About from "./components/About/About";
+import Service from "./components/Features/Service";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -31,6 +32,16 @@ function App() {
             <>
               <Nav />
               <About />
+            </>
+          }
+        />
+
+        <Route
+          path="/services"
+          element={
+            <>
+              <Nav />
+              <Service />
             </>
           }
         />
