@@ -24,7 +24,7 @@ function Signin() {
     setLoading(true);
 
     try {
-      await axios.post("http://localhost:5000/login", {
+      await axios.post("https://nis-backend-isgh.onrender.com/api/auth/login", {
         email,
         password,
       });
@@ -39,7 +39,7 @@ function Signin() {
   };
 
   return (
-    <div className="w-full min-h-screen flex flex-col md:flex-row bg-white">
+    <div className="w-full min-h-screen flex flex-col md:flex-row bg-gray-100">
       {/* LEFT IMAGE */}
       <div className="hidden md:block md:w-1/2">
         <img
@@ -50,7 +50,7 @@ function Signin() {
       </div>
 
       {/* RIGHT CONTENT */}
-      <div className="w-full md:w-1/2 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
+      <div className="w-full md:w-1/2 p-8 md:p-12 lg:p-16  flex flex-col justify-center">
         {/* HEADER */}
         <div className="mb-8 flex flex-col items-center md:items-start">
           <img src={imgNis} alt="NIS Logo" className="w-50 h-16 mb-6" />
@@ -114,12 +114,12 @@ function Signin() {
               Remember me
             </label>
 
-            <button
-              type="button"
+            <Link
+              to="/forgot-password"
               className="text-[#00a840] font-medium hover:underline"
             >
               Forgot password?
-            </button>
+            </Link>
           </div>
 
           {/* SUBMIT */}

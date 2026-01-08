@@ -20,7 +20,7 @@ function Access() {
         className="
       relative z-10 text-white 
       max-w-[300px] 
-      flex flex-col items-center text-center
+      flex flex-col items-center 
       md:max-w-xl md:items-start 
     "
       >
